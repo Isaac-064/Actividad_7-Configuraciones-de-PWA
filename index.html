@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sistema encargado de gestionar la informacion relacionada a los moldes utilizados en produccion.">
+    <meta name="theme-color" content="#333">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>MARELLI</title>
+
+    <link rel="shortcut icon" type="image/png" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="./img/favicon/favicon.ico">
+    <link rel="apple-touch-startup-image" href="./img/favicon/favicon.ico">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Sistema de gestión de moldes</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Inventario</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenido</h2>
+            <p>¡Descubre todo lo que tenemos para ti!</p>
+        </section>
+
+        <section class="features">
+            <h2>Historia</h2>
+            <p>Marelli Automotive Lighting diseña, desarrolla e integra una amplia y completa gama de soluciones de primer nivel para sistemas de iluminación automotriz externos, así como sensores innovadores para respaldar futuras funciones ADAS/AD, incluida la tecnología de sensor LiDAR.</p>
+            <p>Dentro del ámbito de la iluminación, Marelli Automotive Lighting tiene un conocimiento avanzado y profundo en todas las tecnologías clave que permitieron la evolución de la iluminación en las últimas décadas: xenón, Full-LED, Matrix LED, láser y luz digital.</p>
+            <p>La innovación, el rendimiento y la calidad en el desarrollo, la producción y la entrega de sistemas de iluminación inteligentes se logran combinando un diseño extraordinario y una tecnología innovadora con los más altos estándares de calidad.</p>
+        </section>
+
+        <section class="gallery">
+            <h2>Galería</h2>
+            <div class="image-container">
+                <img src="img/moldeo.jpg" alt="Imagen 1">
+                <img src="img/molde.jpg" alt="Imagen 2">
+                <img src="img/produccion.jpg" alt="Imagen 3">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Sistema de gestion de moldes</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./servwork.js')
+                .then(reg => console.log('Registro de SW exitoso', reg))
+                .catch(err => console.warn('Error al tratar de registrar el SW', err))
+        }
+    </script>
+</body>
+</html>
